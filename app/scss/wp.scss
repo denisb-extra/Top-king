@@ -131,8 +131,10 @@ a img.aligncenter {
 	/* Above WP toolbar. */
 }
 
-.wpcf7 input[type="url"], .wpcf7 input[type="email"], .wpcf7 input[type="tel"] {
-    direction: rtl;
+body {
+    .wpcf7 input[type="url"], .wpcf7 input[type="email"], .wpcf7 input[type="tel"] {
+        direction: rtl;
+    }
 }
 
 

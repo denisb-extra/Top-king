@@ -4,7 +4,7 @@ section {
 	margin: auto;	
 	overflow: hidden;
 	position: relative;
-	padding: 80px 0;
+	padding: 85px 0;
 
 	&.no-padding {
 		padding: 0;
@@ -31,7 +31,7 @@ section {
 .content {
 	@include f-r;
 	font-size: 18px;
-	color: #323232;
+	color: #353535;
 	line-height: 1.2;
 	p,ul,li,h1,h2,h3,h4,h5,img {
 		margin-top: 15px;
@@ -44,6 +44,10 @@ section {
 
 	a {
 		color: #B28E2F;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 
@@ -91,64 +95,15 @@ section {
 	&.align-right {
 		text-align: right;   
 	}
-	&.has-left-part {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.text {
-		display: inline-block;
-		position: relative;
-		z-index: 2;
-		background: #fff;
-		padding: 0 20px;
-	}
 
-	&.white {
-		color: #fff;
-		.text {
-			background: #353535;
-		}
-		&:after {
-			background: #fff;
-		}
-	}
-	&.no-line {
-		.text {
-			padding: 0;
-		}
-		&:after {
-			content: none;
-		}
-	}
 	@media only screen and (max-width : $tw) {
 		font-size: 35px;
 	}
 	@media only screen and (max-width : $mw) {
 		font-size: 30px;
-		.text {
-			padding: 0 10px;
-		}
-		&:after {
-			left: 10px;
-			right: 10px;
-		}
-		img {
-			height: 20px;
-		}
-
-		&.align-right {
-			//text-align: center;   
-		}
-		&.has-left-part {
-			flex-direction: column;
-			&:after {
-				top: 13px;
-				transform: none;
-			}
-		}
 	}
 }
+
 .section-subtitle {
 	@include f-r;
 	font-size: 17px;
@@ -271,12 +226,12 @@ section {
 }
 
 .sm_menu_outer.slide .mobile_menu li.hasChild > a {
-    background: url(../plugins/mmenu/images/next.png) no-repeat scroll 10px center / 5% auto;
+    background: url(../plugins/mmenu/images/next.png) no-repeat scroll 10px center / 20px auto;
 }
 
 .sm_menu_outer .mobile_menu li.back a {
     padding: 20px 45px 20px 5px;
-    background: url(../plugins/mmenu/images/back.png) no-repeat scroll right 15px center / 5% auto;
+    background: url(../plugins/mmenu/images/back.png) no-repeat scroll right 15px center / 20px auto;
 }
 
 .sm_menu_outer {
@@ -330,3 +285,5 @@ section {
 		transform: translate(0, 8px);
 	}
 }
+
+
